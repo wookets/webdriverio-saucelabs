@@ -1,0 +1,32 @@
+{
+  "name": "webdriverio-saucelabs",
+  "version": "0.0.1",
+  "description": "Webdriver with saucelabs integration",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "wdio wdio.conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wookets/webdriverio-saucelabs.git"
+  },
+  "author": "wookets",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wookets/webdriverio-saucelabs/issues"
+  },
+  "homepage": "https://github.com/wookets/webdriverio-saucelabs#readme",
+  "dependencies": {
+    "chai": "4.1.2",
+    "chai-webdriverio": "0.4.3",
+    "wdio-mocha-framework": "0.5.13",
+    "wdio-sauce-service": "0.4.8",
+    "wdio-spec-reporter": "0.1.4",
+    "wdio-visual-regression-service": "0.8.0",
+    "webdriverio": "4.12.0"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-es2015-modules-commonjs": "6.26.0",
+    "babel-register": "6.26.0"
+  }
+}
