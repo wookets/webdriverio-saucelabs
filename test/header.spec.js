@@ -13,6 +13,7 @@ describe('header', () => {
 	})
 
 	it('should show the cart icon', () => {
+		const header = new Header()
 		expect(header.isCartVisible()).to.be.true
 	})
 
