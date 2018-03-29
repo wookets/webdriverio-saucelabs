@@ -1,8 +1,21 @@
 
+const CART = '.cart'
+const LOGO = '.logo'
+const SEARCH_INPUT = '#gh-search-input'
+const SEARCH_BUTTON = '.header-search-button'
+
 export default class Header {
 
-	get logo() { return $('.logo') }
-	get searchInput()  { return $('#gh-search-input') }
-	get searchButton() { return $('.header-search-button') }
+	isCartVisible () {
+		return $(CART).isVisibleWithinViewport()
+	}
 
+	isLogoVisible () {
+		return $(LOGO).isVisibleWithinViewport()
+	}
+
+	search (input) {
+		$(SEARCH_INPUT).setValue(input)
+		$(SEARCH_BUTTON).click()
+	}
 }

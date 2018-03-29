@@ -8,11 +8,12 @@ describe('header', () => {
 	})
 
 	it('should show the bby logo', () => {
-		expect(browser.isVisibleWithinViewport('.logo')).to.be.true
+		const header = new Header()
+		expect(header.isLogoVisible()).to.be.true
 	})
 
 	it('should show the cart icon', () => {
-		expect(browser.isVisibleWithinViewport('.cart')).to.be.true
+		expect(header.isCartVisible()).to.be.true
 	})
 
 })
